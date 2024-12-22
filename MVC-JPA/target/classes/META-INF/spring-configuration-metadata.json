@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "view",
+      "type": "com.weatherman.MVC.JPA.controller.CSController",
+      "sourceType": "com.weatherman.MVC.JPA.controller.CSController"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
