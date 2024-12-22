@@ -18,6 +18,7 @@ public class CSImplementation implements ICustomerService
     {
         System.out.println ("*ENTRY SAVED*");
         repo.save (CI);
+
         return "*Check Database*";
     }
 
@@ -31,6 +32,7 @@ public class CSImplementation implements ICustomerService
     public String deleteAllCustomers(CustomerInfo CI)
     {
         repo.deleteAll ();
+
         return "*DATABASE RESET*";
     }
 

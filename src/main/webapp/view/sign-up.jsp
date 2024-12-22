@@ -7,7 +7,7 @@
 <body>
 <h1>SIGN UP!</h1>
 
-<h1>${getForm}</h1>
+<h2>${getForm}</h2>
 
 <form action="register" method="post">
 Enter ID : <input type="text" name="ID"><br>

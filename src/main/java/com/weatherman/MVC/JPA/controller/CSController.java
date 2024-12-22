@@ -27,16 +27,21 @@ public class CSController
     @GetMapping("register")
     public String homePage(Map<String, Object> model)
     {
+        //GET request is used because the client is "asking" to GET this endpoint
         String ss="Form:";
         model.put ("getForm",ss);
+
         return "sign-up";
     }
+
     //Bi-directional mapping
     @PostMapping("register")
     public String showResult(Map<String, Object>model,@ModelAttribute("form") CustomerInfo CI)
     {
+        //POST-ing to DB
         service.registerCustomer (CI);
         model.put ("form", CI);
+
         return "result";
     }
 
@@ -45,6 +50,7 @@ public class CSController
     {
         Iterable<CustomerInfo> customerlist = service.getCustomers ();
         model.addAttribute ("customerlist",customerlist);
+
         return "customerlist";
     }
 }
